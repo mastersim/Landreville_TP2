@@ -17,6 +17,9 @@
 	<?php 
 //	the_post_thumbnail(''); 
 
+	?>
+	<a href="<?php the_permalink(); ?>">
+	<?php
 	$image = get_field('mon_image');
 	$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
 	if( $image ) {
@@ -26,7 +29,7 @@
 	// add_post_meta($post_id, '_thumbnail_id', $attachment_id);
 	
 	?>
-		<a href="<?php the_title(); ?><?php get_permalink(); ?>"></a>
+	</a>
 	</figcaption>
 	</figure>
 </div>

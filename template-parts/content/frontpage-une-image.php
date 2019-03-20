@@ -12,15 +12,18 @@
 
 <div class="wp-block-media-text is-stacked-on-mobile" style="grid-template-columns:30% auto">
 	<figure class="wp-block-media-text__media">	
+
+		<a href="<?php the_permalink(); ?>">
+
 		<?php
 			$image = get_field('mon_image');
-			$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+			$size = 'full'; // (thumbnail, medium, large, full or custom size)
 			if( $image ) {
 				echo wp_get_attachment_image( $image, $size );
 			}
 		?>
 		<figcaption>
-		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		</a>
 		</figcaption>
     </figure>
     <div class="wp-block-media-text__content">
