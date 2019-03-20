@@ -795,6 +795,11 @@ body.page .main-navigation {
   font-size: 100%;
 }
 
+/*
+.entry-content .wp-block-media-text.alignwide{
+    display:block;
+}
+*/
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);
@@ -807,7 +812,6 @@ body.page .main-navigation {
             transform: translateY(0) rotateX(0deg);
   }
 }
-
 @keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);

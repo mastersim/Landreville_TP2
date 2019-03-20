@@ -14,12 +14,15 @@
 <?php
 
 $sigle = substr(get_the_title(),0,7);
+
 $session = substr($sigle,4,1);
+$domaine = substr($sigle,5,1);
+
 
 $desc = get_the_content();
 $titre = substr(get_the_title(),7);
 echo '<div class="entry-title'
- . ' session-' . $session
+ . ' session-' . $domaine
  . '  "><a href="'; 
 echo esc_url( get_permalink()) . '"';
 
