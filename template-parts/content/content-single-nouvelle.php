@@ -22,6 +22,7 @@
 		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
 			<figure class="wp-block-media-text__media">
 			<?php
+			
 				$image = get_field('mon_image');
 				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
 				if( $image ) {
