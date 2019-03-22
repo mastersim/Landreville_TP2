@@ -800,6 +800,23 @@ body.page .main-navigation {
     display:block;
 }
 */
+.site-header.featured-image .site-featured-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 14vw 0 14vw;
+}
+
+.site-header.featured-image .site-featured-image .entry-header {
+  margin: 0;
+}
+
+/*#primary {
+	display:flex;
+		justify-content: center;
+}*/
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-100vh) rotateX(0deg);

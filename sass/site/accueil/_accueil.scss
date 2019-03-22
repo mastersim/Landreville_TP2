@@ -23,3 +23,19 @@
     display:block;
 }
 */
+
+.site-header.featured-image .site-featured-image{
+    display: flex;
+    align-self: flex-start;
+    margin: 0 14vw 0 14vw;
+
+}
+
+.site-header.featured-image .site-featured-image .entry-header{
+    margin: 0;
+}
+
+/*#primary {
+	display:flex;
+		justify-content: center;
+}*/
