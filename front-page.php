@@ -29,6 +29,7 @@ get_header();
 		endwhile; // End of the loop.
 
 		?>
+		
 
 <!--  /////////////////////////////////// La deuxième boucle pour les articles de catégorie Nouvelle -->
 	<?php
