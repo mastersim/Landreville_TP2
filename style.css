@@ -779,6 +779,10 @@ body.page .main-navigation {
   font-size: .4em;
 }
 
+.wp-block-media-text.alignwide {
+  display: block;
+}
+
 .entry .entry-content .has-large-font-size {
   font-size: 1em;
 }

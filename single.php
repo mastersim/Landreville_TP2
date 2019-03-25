@@ -26,7 +26,10 @@ get_header();
 				if( in_category( array('nouvelle', 'evenement'))){
 					get_template_part( 'template-parts/content/content', 'single-nouvelle' );
 				}
-				get_template_part( 'template-parts/content/content');
+
+				if( in_category('cours')){
+					get_template_part( 'template-parts/content/content', 'single-cours' );
+				}
 
 			
 				if ( is_singular( 'attachment' ) ) {
