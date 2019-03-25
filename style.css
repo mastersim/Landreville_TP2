@@ -783,6 +783,10 @@ body.page .main-navigation {
   display: block;
 }
 
+.wp-block-media-text__media {
+  padding: 8%;
+}
+
 .entry .entry-content .has-large-font-size {
   font-size: 1em;
 }
