@@ -3,12 +3,12 @@
 
 @keyframes anim1 {
     from {
-        transform: translateY(-100vh)  rotateX(0deg);
+        transform: translateY(-300vh)  rotateX(180deg);
          animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
     }
  
     100% {
-        transform: translateY(0) rotateX(0deg); 
+        transform: translateY(0) rotateX(90deg); 
         // animation-timing-function: cubic-bezier(.89, .17, 1, .31);
     }
 }
@@ -62,6 +62,16 @@
     }
 }
 
+@keyframes anim4 {
+    0% {
+        background-color: #001F3F;
+      }
+      100% {
+        background-color: #FF4136;
+      }
+
+}
+
 .site-header.featured-image {
     perspective: 500px;
 }
@@ -79,4 +89,9 @@
     transform-origin: top center;
     animation: anim3 1s forwards, anim2 1s 1s forwards;
     animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+}
+
+.anim4 {
+    // animation-fill-mode: forwards;
+    animation: anim4 5s infinite;
 }

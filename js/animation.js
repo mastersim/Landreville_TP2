@@ -5,5 +5,7 @@ window.addEventListener('load',function(){
     let elmDescription = document.querySelector('.site-branding .site-description')
 
     elmTitre.classList.add('anim1')
+    elmTitre.classList.add('anim4')
+
     elmDescription.classList.add('anim3')
 })
