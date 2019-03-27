@@ -11,7 +11,6 @@
 
 get_header();
 ?>
-COMMIT + ANIMATION
 <!--//////////////////  front-page.php //////////////-->
 <section id="primary" class="content-area">
 	<main id="main" class="site-main">
