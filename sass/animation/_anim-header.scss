@@ -6,7 +6,6 @@
         transform: translateY(-300vh)  rotateX(180deg);
          animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
     }
- 
     100% {
         transform: translateY(0) rotateX(90deg); 
         // animation-timing-function: cubic-bezier(.89, .17, 1, .31);
@@ -16,6 +15,7 @@
 @keyframes anim2 {
 
    0% {
+         opacity: 0;
         transform: rotateX(50deg); 
         animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
     }
@@ -45,6 +45,7 @@
         }
 
     100% {
+        opacity: 1;
         transform:  rotateX(0deg);
     }
 } 
@@ -53,12 +54,13 @@
 
 @keyframes anim3 {
     0% {
-        animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+    
         transform: translateX(-100%) rotateX(50deg);
     }
 
     100% {
-        transform: translateX(0) rotateX(50deg);
+      
+        transform: translateX(0) rotateX(0);
     }
 }
 
@@ -75,6 +77,17 @@
 
 }
 
+@keyframes anim5{
+    0% {
+        left:0px; top:0px;
+    }
+    50%  {
+        left:200px; top:200px;
+    }
+    100% {left:0px; top:0px;
+    }
+}
+
 .site-header.featured-image {
     perspective: 500px;
 }
@@ -87,14 +100,27 @@
     
 }
 
+
+.anim1-2 {
+    transform-origin: top center;
+    animation: anim2 1s 2s;
+
+    animation-fill-mode: forwards;
+    
+}
+
 .anim3 {
     // animation-fill-mode: forwards;
     transform-origin: top center;
-    animation: anim3 1s forwards, anim2 1s 1s forwards;
-    animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+    animation: anim3 1s forwards;
 }
 
 .anim4 {
     // animation-fill-mode: forwards;
     animation: anim4 5s infinite;
+}
+
+.anim5 {
+    // animation-fill-mode: forwards;
+    animation: anim5 5s infinite;
 }

@@ -6,7 +6,10 @@ window.addEventListener('load',function(){
     let elmEntete = document.querySelector('.site-featured-image .entry-header .entry-title')
 
     elmEntete.classList.add('anim4')
-    elmTitre.classList.add('anim1')
+    elmTitre.classList.add('anim1-2')
 
     elmDescription.classList.add('anim3')
+
+
+
 })

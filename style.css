@@ -868,6 +868,7 @@ body.page .main-navigation {
 
 @-webkit-keyframes anim2 {
   0% {
+    opacity: 0;
     -webkit-transform: rotateX(50deg);
             transform: rotateX(50deg);
     -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
@@ -902,6 +903,7 @@ body.page .main-navigation {
             transform: rotateX(-2deg);
   }
   100% {
+    opacity: 1;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
@@ -909,6 +911,7 @@ body.page .main-navigation {
 
 @keyframes anim2 {
   0% {
+    opacity: 0;
     -webkit-transform: rotateX(50deg);
             transform: rotateX(50deg);
     -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
@@ -943,6 +946,7 @@ body.page .main-navigation {
             transform: rotateX(-2deg);
   }
   100% {
+    opacity: 1;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
@@ -950,27 +954,23 @@ body.page .main-navigation {
 
 @-webkit-keyframes anim3 {
   0% {
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
     -webkit-transform: translateX(-100%) rotateX(50deg);
             transform: translateX(-100%) rotateX(50deg);
   }
   100% {
-    -webkit-transform: translateX(0) rotateX(50deg);
-            transform: translateX(0) rotateX(50deg);
+    -webkit-transform: translateX(0) rotateX(0);
+            transform: translateX(0) rotateX(0);
   }
 }
 
 @keyframes anim3 {
   0% {
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
     -webkit-transform: translateX(-100%) rotateX(50deg);
             transform: translateX(-100%) rotateX(50deg);
   }
   100% {
-    -webkit-transform: translateX(0) rotateX(50deg);
-            transform: translateX(0) rotateX(50deg);
+    -webkit-transform: translateX(0) rotateX(0);
+            transform: translateX(0) rotateX(0);
   }
 }
 
@@ -998,6 +998,36 @@ body.page .main-navigation {
   }
 }
 
+@-webkit-keyframes anim5 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes anim5 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
 .site-header.featured-image {
   -webkit-perspective: 500px;
           perspective: 500px;
@@ -1012,17 +1042,29 @@ body.page .main-navigation {
           animation-fill-mode: forwards;
 }
 
+.anim1-2 {
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-animation: anim2 1s 2s;
+          animation: anim2 1s 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .anim3 {
   -webkit-transform-origin: top center;
           transform-origin: top center;
-  -webkit-animation: anim3 1s forwards, anim2 1s 1s forwards;
-          animation: anim3 1s forwards, anim2 1s 1s forwards;
-  -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-          animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+  -webkit-animation: anim3 1s forwards;
+          animation: anim3 1s forwards;
 }
 
 .anim4 {
   -webkit-animation: anim4 5s infinite;
           animation: anim4 5s infinite;
+}
+
+.anim5 {
+  -webkit-animation: anim5 5s infinite;
+          animation: anim5 5s infinite;
 }
 /*# sourceMappingURL=style.css.map */
