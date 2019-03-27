@@ -704,12 +704,12 @@ body.page .main-navigation {
 }
 
 .liste-cours .session-1 {
-  background-color: #1c7742;
+  background-color: #392bff;
   color: #fff;
 }
 
 .liste-cours .session-2 {
-  background-color: #d3a145;
+  background-color: #b5b4ff;
   color: #aaa;
 }
 
@@ -719,17 +719,17 @@ body.page .main-navigation {
 }
 
 .liste-cours .session-4 {
-  background-color: #948b36;
+  background-color: #a8e3ff;
   color: #fff;
 }
 
 .liste-cours .session-5 {
-  background-color: #97173d;
+  background-color: #261185;
   color: #fff;
 }
 
 .liste-cours .session-6 {
-  background-color: #251b04;
+  background-color: #100425;
   color: #fff;
 }
 
@@ -843,26 +843,26 @@ body.page .main-navigation {
 }*/
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: translateY(-100vh) rotateX(0deg);
-            transform: translateY(-100vh) rotateX(0deg);
+    -webkit-transform: translateY(-300vh) rotateX(180deg);
+            transform: translateY(-300vh) rotateX(180deg);
     -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
             animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0deg);
-            transform: translateY(0) rotateX(0deg);
+    -webkit-transform: translateY(0) rotateX(90deg);
+            transform: translateY(0) rotateX(90deg);
   }
 }
 @keyframes anim1 {
   from {
-    -webkit-transform: translateY(-100vh) rotateX(0deg);
-            transform: translateY(-100vh) rotateX(0deg);
+    -webkit-transform: translateY(-300vh) rotateX(180deg);
+            transform: translateY(-300vh) rotateX(180deg);
     -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
             animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0deg);
-            transform: translateY(0) rotateX(0deg);
+    -webkit-transform: translateY(0) rotateX(90deg);
+            transform: translateY(0) rotateX(90deg);
   }
 }
 
@@ -974,6 +974,30 @@ body.page .main-navigation {
   }
 }
 
+@-webkit-keyframes anim4 {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #00aeff;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes anim4 {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #00aeff;
+  }
+  100% {
+    color: white;
+  }
+}
+
 .site-header.featured-image {
   -webkit-perspective: 500px;
           perspective: 500px;
@@ -995,5 +1019,10 @@ body.page .main-navigation {
           animation: anim3 1s forwards, anim2 1s 1s forwards;
   -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
           animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+}
+
+.anim4 {
+  -webkit-animation: anim4 5s infinite;
+          animation: anim4 5s infinite;
 }
 /*# sourceMappingURL=style.css.map */

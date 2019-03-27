@@ -64,11 +64,14 @@
 
 @keyframes anim4 {
     0% {
-        background-color: #001F3F;
+        color: rgb(255, 255, 255);
       }
-      100% {
-        background-color: #FF4136;
+      50% {
+        color: rgb(0, 174, 255);
       }
+    100%{
+        color: rgb(255, 255, 255);
+    }
 
 }
 
@@ -78,7 +81,7 @@
 
 .anim1 {
     transform-origin: top center;
-    animation: anim1 2s, anim2 1s 2s, anim4 5s infinite ;
+    animation: anim1 2s, anim2 1s 2s;
 
     animation-fill-mode: forwards;
     
